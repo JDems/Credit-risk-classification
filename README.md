@@ -13,3 +13,16 @@ In this Challenge, you’ll use various techniques to train and evaluate a model
 Upon initial review, more borrowers repaid (75036) than defaulted (2500). This imbalance could affect model performance on the smaller dataset. To address this, we split the data, set up the model parameters, and conducted training and prediction.
 
 Additionally, we used RandomOverSampler to balance dataset proportions for improved default prediction.
+
+Result:
+
+Model 1:
+
+Balanced Accuracy: 0.952
+Precision (Healthy Loans/High-risk Loans): 1.00/0.85
+Recall (Healthy Loans/High-risk Loans): 0.99/0.91
+Model 2 (resampled):
+
+Balanced Accuracy: 0.994
+Precision (Healthy Loans/High-risk Loans): 1.00/0.84
+Recall (Healthy Loans/High-risk Loans): 0.99/0.99
